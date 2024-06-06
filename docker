@@ -10,3 +10,7 @@ sudo apt-get update
 
 sudo update-ca-certificates
 sudo apt-get update
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o docker-archive-keyring.gpg
+sudo mkdir -p /usr/share/keyrings
+sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg docker-archive-keyring.gpg
